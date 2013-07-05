@@ -1,0 +1,31 @@
+Easy-RSA requires the openssl program in order to perform cryptographic
+operations. Under Windows, this program is not a standard package as it is on
+Unix-alike systems.
+
+The easiest solution is to update the system PATH environmental variable to
+reference a functioning OpenSSL installation.
+
+Optionally, a full path to the openssl program can be defined for Easy-RSA at
+runtime by one of two methods: either put the path in the OPENSSL environment
+variable, or define it in a 'vars' file (see the vars.example comments for how
+to use this file.) In both cases, with the bundled interpreter Easy-RSA provides
+for Windows, the path should be a qualified path in typical Windows syntax,
+including extension, such as: "C:\Program Files\OpenSSL\bin\openssl.exe" -- note
+that either forward or backslashes are accepted.
+
+How to obtain OpenSSL:
+
+If using OpenVPN, the program installer offers to install the openssl program
+and add it to the system default path (although as of this writing both these
+options are not defaults when installing OpenVPN.)
+
+Another option is to install a pre-compiled binary release of OpenSSL from the
+openssl.org website, which links to a binary release. The dir holding the binary
+will then need to be set up in the system PATH or passed to Easy-RSA as
+described above.
+
+Why Easy-RSA doesn't ship with its own OpenSSL binary:
+
+In the event a security-sensitive release of OpenSSL is published, it should not
+be necessary to update Easy-RSA itself; Easy-RSA merely uses openssl, and thus
+will not ship with a bundled copy.

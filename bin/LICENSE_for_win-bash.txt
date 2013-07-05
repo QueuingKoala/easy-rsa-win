@@ -2,3 +2,19 @@ win-bash executables are included with this Windows binary release of Easy-RSA 3
 
 win-bash code is released under the GPLv2 and full sources can be found at:
 http://sourceforge.net/projects/win-bash/
+
+The following binaries are used in Easy-RSA 3 for Windows from win-bash:
+    * basename.exe
+	* cat.exe
+	* cp.exe
+	* cygwin1.dll
+	* diff.exe
+	* grep.exe
+	* ls.exe
+	* md5sum.exe
+	* mkdir.exe
+	* mv.exe
+	* rm.exe
+	* sh.exe
+	* which.exe
+	* win32gnu.dll
