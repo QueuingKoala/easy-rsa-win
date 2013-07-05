@@ -1,0 +1,4 @@
+win-bash executables are included with this Windows binary release of Easy-RSA 3.
+
+win-bash code is released under the GPLv2 and full sources can be found at:
+http://sourceforge.net/projects/win-bash/
