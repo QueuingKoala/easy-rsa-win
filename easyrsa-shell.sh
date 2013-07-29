@@ -13,7 +13,7 @@ if [ -z "$OPENSSL" ] && ! which openssl.exe >/dev/null 2>&1; then
 fi
 
 [ -f "$EASYRSA_PATH/easyrsa" ] || {
-	echo "Missing easyrsa script. Expected to find it at: $EASYRSA/easyrsa"
+	echo "Missing easyrsa script. Expected to find it at: $EASYRSA_PATH/easyrsa"
 	exit 2
 }
 
